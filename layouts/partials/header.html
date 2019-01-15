@@ -9,7 +9,11 @@
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ end }}">
     <meta name="author" content="{{ if .Params.authors }}{{ .Params.authors }}{{ else if .Site.Params.Author }}{{.Site.Params.Author}}{{ end }}">
     <meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ end }}">
-
+    
+    <meta property="og:url" content="http://www.leedsdevops.org.uk">
+    <meta property="og:title" content="{{ .Title }} -- {{ .Site.Title }}">
+    <meta property="og:image" content="http://www.leedsdevops.org.uk/linkedin-link.png" />
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ end }}" />
 
     <title>{{ .Title }} -- {{ .Site.Title }}</title>
 
